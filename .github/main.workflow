@@ -4,7 +4,7 @@ workflow "Build Repo RPM" {
 }
 
 action "mmornati/mock-rpmbuilder" {
-  uses = "mmornati/mock-rpmbuilder@latest"
+  uses = "mmornati/docker-mock-rpmbuilder@master"
   env = {
     SPEC_FILE = "git.spec"
     SOURCES = "SOURCES/git-2.3.0.tar.gz"
