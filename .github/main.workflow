@@ -9,6 +9,5 @@ action "Build RPM" {
     SPEC_FILE = "git.spec"
     SOURCES = "SOURCES/git-2.3.0.tar.gz"
     MOCK_CONFIG = "epel-6-i386"
-    BUILD_ON_GITHUB = "true"
   }
 }
