@@ -1,9 +1,9 @@
 workflow "Build Repo RPM" {
   on = "push"
-  resolves = ["mmornati/mock-rpmbuilder"]
+  resolves = ["Build RPM"]
 }
 
-action "mmornati/mock-rpmbuilder" {
+action "Build RPM" {
   uses = "mmornati/docker-mock-rpmbuilder@master"
   env = {
     SPEC_FILE = "git.spec"
